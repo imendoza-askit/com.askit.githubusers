@@ -1,10 +1,9 @@
 {
   "expo": {
-    "name": "com.askit.githubusers",
-    "slug": "com.askit.githubusers",
+    "name": "GitHub Users",
+    "slug": "githubUsers",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,14 +12,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.askit.githubusers"
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"
     },
     "plugins": [
       "expo-router",
@@ -31,6 +29,16 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/MonaspaceNeon-Bold.otf",
+            "./assets/fonts/MonaspaceNeon-Medium.otf",
+            "./assets/fonts/MonaspaceNeon-SemiBold.otf"
+          ]
         }
       ]
     ],
